@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>Simple Expenses Test Harness</title>
+</head>
+<body>
+
+<h2>Simple Expenses Test Harness (Create/Update/Delete: "CRUD")</h2>
+
+<div id="newRecordForm">
+<h4>Create a new record:</h4>
+<label>Description:</label><input id="c_description">
+<label>Value:</label><input id="c_value" type="number">
+<button id="btn_create" class="btn">Create</button>
+</div>
+
+<hr>
+
+<div id="editRecordForm">
+<h4>Edit an existing record:</h4>
+<label>ID:</label><input id="u_id" type="number">
+<label>Description:</label><input id="u_description">
+<label>Value:</label><input id="u_value" type="number">
+<button id="btn_update" class="btn">Edit</button>
+</div>
+
+<hr>
+
+<div id="deleteRecordForm">
+<h4>Delete an existing record:</h4>
+<label>ID:</label><input id="d_id" type="number">
+<button id="btn_remove" class="btn">Delete</button>
+</div>
+
+<hr>
+
+<h2>List Of Records (refresh page to reload)</h2>
+<div id="container">
+Please wait, the list will be shown here shortly.
+</div>
+
+
+<script src="test.js"></script>
+</body>
+</html>
+

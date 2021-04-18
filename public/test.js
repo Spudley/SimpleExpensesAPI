@@ -13,16 +13,16 @@
 
     let ajax = {
         loadEntries: function(successHandler, errorHandler) {
-            this.call('GET', './listExpenses', {}, successHandler, errorHandler);
+            this.call('GET', './api/listExpenses', {}, successHandler, errorHandler);
         },
         createEntry: function(data, successHandler, errorHandler) {
-            this.call('POST', './expenses/', data, successHandler, errorHandler);
+            this.call('POST', './api/expenses/', data, successHandler, errorHandler);
         },
         updateEntry: function(data, successHandler, errorHandler) {
-            this.call('PATCH', './expenses/'+data.id, data, successHandler, errorHandler);
+            this.call('PATCH', './api/expenses/'+data.id, data, successHandler, errorHandler);
         },
         deleteEntry: function(data, successHandler, errorHandler) {
-            this.call('DELETE', './expenses/'+data.id, {}, successHandler, errorHandler);
+            this.call('DELETE', './api/expenses/'+data.id, {}, successHandler, errorHandler);
         },
 
         call: function(method, url, data, successHandler, errorHandler) {

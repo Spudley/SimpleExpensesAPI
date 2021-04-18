@@ -25,7 +25,7 @@ class CrudExpensesController extends AbstractController
     }
 
     /**
-     * @Route("/expenses/", name="add_expense", methods={"POST"})
+     * @Route("/api/expenses/", name="add_expense", methods={"POST"})
      */
     public function addExpense(Request $request): JsonResponse
     {
@@ -44,7 +44,7 @@ class CrudExpensesController extends AbstractController
     }
 
     /**
-     * @Route("/expenses/{id}", name="get_expense", methods={"GET"})
+     * @Route("/api/expenses/{id}", name="get_expense", methods={"GET"})
      */
     public function getExpense(int $id): JsonResponse
     {
@@ -54,7 +54,7 @@ class CrudExpensesController extends AbstractController
     }
 
     /**
-     * @Route("/expenses/{id}", name="update_expense", methods={"PATCH"})
+     * @Route("/api/expenses/{id}", name="update_expense", methods={"PATCH"})
      */
     public function updateExpense(int $id, Request $request): JsonResponse
     {
@@ -80,7 +80,7 @@ class CrudExpensesController extends AbstractController
     }
 
     /**
-     * @Route("/expenses/{id}", name="delete_expense", methods={"DELETE"})
+     * @Route("/api/expenses/{id}", name="delete_expense", methods={"DELETE"})
      */
     public function deleteExpense(int $id): JsonResponse
     {

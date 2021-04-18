@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class ListExpensesController extends AbstractController
 {
     /**
-     * @Route("/listExpenses")
+     * @Route("/api/listExpenses", name="list_expenses", methods={"GET"})
      */
     public function listExpenses(ExpenseRepository $expenseRepository): JsonResponse
     {
